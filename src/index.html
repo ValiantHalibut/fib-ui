@@ -4,58 +4,152 @@
 <body class="bgc-black">
     <script src="index.js"></script>
     <div class="fib-main bgc-dark-primary">
-        <div class="title-page fcw">Copy Test</div>
-        <div class="title-section fcw">Copy Test</div>
-        <div class="text-head fcw">Copy Test</div>
-        <div class="text-subhead fcw">Copy Test</div>
-        <div class="text-copy fcw">Copy Test</div>
+        <div class="title-page">Page Title .title-page</div>
+        <div class="title-section">Section Title .title-section</div>
+        <div class="text-head">Text Header .text-head</div>
+        <div class="text-subhead">Text Sub Header .text-subhead</div>
+        <div class="text-copy">Body Copy Text .text-copy</div>
         <div class="layout-base">
-            <div class="layout-node node-width-primary bgc-light-primary">
+            <div class="layout-node node-width-primary bgc-light-primary padding-small">
                 <div class="text-head">Button Styles</div>
-                <div class="button button-positive">Accept</div>
-                <div class="button button-negative">Cancel</div>
-                <div class="button button-neutral">Other</div>
+                <div class="button button-positive txt-outline-black">Accept</div>
+                <div class="button button-negative txt-outline-black">Cancel</div>
+                <div class="button button-neutral txt-outline-black">Other</div>
+                <br>
+                <div class="button button-positive txt-outline-black-soft">Accept</div>
+                <div class="button button-negative txt-outline-black-soft">Cancel</div>
+                <div class="button button-neutral txt-outline-black-soft">Other</div>
+                <br>
+                <div class="text-head">Form Styles</div>
+                <form>
+                    <label for="textstring">Text Input</label>
+                    <input type="text" id="textstring" name="textstring" placeholder="Text String">
+                    <label for="textarea">Text Area</label>
+                    <textarea id="textarea" name="textarea" placeholder="Text Area..."></textarea>
+                </form>
             </div>
-            <div class="layout-node node-width-secondary bgc-light-secondary">
+            <div class="layout-node node-width-secondary bgc-light-secondary margin-xlarge padding-small">
                 <div class="text-head">Something Else</div>
             </div>
         </div>
         <div class="layout-base">
-            <div class="layout-node node-width-full bgc-light-secondary">
-                <div class="text-head">Some Header Text</div>
+            <div class="layout-node node-width-full bgc-dark-primary">
+                <div class="text-head">Full Width Node</div>
+                <div class="text-subhead">.node-width-full</div>
+                <p class="text-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget velit nisl.
+                    Aliquam non nulla ex. Sed volutpat bibendum est vitae interdum. Phasellus semper dolor tortor, ut
+                    volutpat nulla posuere id. Integer quis feugiat sapien. Fusce mollis ante id porta ornare. Nulla
+                    tincidunt sapien vel diam eleifend euismod. Maecenas ultricies ex sit amet lacus fermentum, a
+                    aliquet lorem tempor. Donec bibendum blandit ipsum. Cras eget justo sodales purus ultrices porttitor
+                    finibus in diam. Sed vehicula quis diam ut sodales. Suspendisse dapibus elementum faucibus. Maecenas
+                    sollicitudin tellus elementum tortor vulputate, vel euismod leo gravida. Suspendisse quis finibus
+                    nulla. Sed cursus risus fringilla mauris pharetra interdum.</p>
+                <p class="text-copy">Maecenas laoreet risus vel felis pretium, eu luctus ipsum tristique. Donec sit amet
+                    sem ac ligula bibendum tempus. Proin non elit varius, aliquam lectus at, accumsan diam. Donec ipsum
+                    nulla, mattis sit amet nulla ut, laoreet faucibus orci. In bibendum sollicitudin felis, quis cursus
+                    dui ultrices at. Nunc convallis arcu nec erat volutpat, non efficitur felis consequat. In hac
+                    habitasse platea dictumst. Aenean sagittis mollis elit vitae euismod. Nam id pretium magna. Integer
+                    pulvinar orci vitae tortor feugiat placerat. Vestibulum rhoncus tortor ac mauris mollis
+                    pellentesque.</p>
             </div>
             <div class="layout-node node-width-half bgc-light-primary">
-                <div class="text-subhead">Some Node SubHeader Text</div>
-                <div class="text-copy">Some node copy that's super interesting.</div>
+                <div class="text-head">Half Width Node</div>
+                <div class="text-subhead">.node-width-half</div>
+                <p class="text-copy">Maecenas laoreet risus vel felis pretium, eu luctus ipsum tristique. Donec sit amet
+                    sem ac ligula bibendum tempus. Proin non elit varius, aliquam lectus at, accumsan diam. Donec ipsum
+                    nulla, mattis sit amet nulla ut, laoreet faucibus orci. In bibendum sollicitudin felis, quis cursus
+                    dui ultrices at. Nunc convallis arcu nec erat volutpat, non efficitur felis consequat. In hac
+                    habitasse platea dictumst. Aenean sagittis mollis elit vitae euismod. Nam id pretium magna. Integer
+                    pulvinar orci vitae tortor feugiat placerat. Vestibulum rhoncus tortor ac mauris mollis
+                    pellentesque.</p>
             </div>
-            <div class="layout-node node-width-half bgc-light-primary">
-                <div class="text-subhead">Some Other Node SubHeader</div>
-                <div class="text-copy">Some more node copy that's different but just as interesting.</div>
+            <div class="layout-node node-width-half bgc-light-secondary">
+                <div class="text-head">Half Width Node</div>
+                <div class="text-subhead">.node-width-half</div>
+                <p class="text-copy">Mauris in sem posuere, ornare mauris id, auctor orci. Morbi ac nunc id ante
+                    vehicula mattis ac eu augue. Praesent in ante tempus, gravida nisi quis, ornare dolor. Fusce
+                    convallis mauris id eleifend vestibulum. Vivamus porttitor egestas dui ac sollicitudin. Nulla
+                    vulputate finibus diam eget volutpat. Donec mattis hendrerit tellus ac elementum.</p>
             </div>
-            <div class="layout-node node-width-secondary bgc-dark-secondary fcw ">
-                <div class="text-subhead">Secondary Column</div>
-                <div class="text-copy">Secondary column node copy.</div>
+            <div class="layout-node node-width-secondary bgc-dark-secondary ">
+                <div class="text-head">Secondary Column</div>
+                <div class="text-subhead">.node-width-secondary</div>
+                <p class="text-copy">Maecenas laoreet risus vel felis pretium, eu luctus ipsum tristique. Donec sit amet
+                    sem ac ligula bibendum tempus. Proin non elit varius, aliquam lectus at, accumsan diam. Donec ipsum
+                    nulla, mattis sit amet nulla ut, laoreet faucibus orci. In bibendum sollicitudin felis, quis cursus
+                    dui ultrices at. Nunc convallis arcu nec erat volutpat, non efficitur felis consequat. In hac
+                    habitasse platea dictumst. Aenean sagittis mollis elit vitae euismod. Nam id pretium magna. Integer
+                    pulvinar orci vitae tortor feugiat placerat. Vestibulum rhoncus tortor ac mauris mollis
+                    pellentesque.</p>
             </div>
-            <div class="layout-node node-width-primary bgc-light-secondary">
-                <div class="text-subhead">Primary Column</div>
-                <div class="text-copy">Primary column node copy for your enjoyment.</div>
+            <div class="layout-node node-width-primary bgc-dark-primary">
+                <div class="text-head">Primary Column</div>
+                <div class="text-subhead">.node-width-primary</div>
+                <p class="text-copy">Maecenas laoreet risus vel felis pretium, eu luctus ipsum tristique. Donec sit amet
+                    sem ac ligula bibendum tempus. Proin non elit varius, aliquam lectus at, accumsan diam. Donec ipsum
+                    nulla, mattis sit amet nulla ut, laoreet faucibus orci. In bibendum sollicitudin felis, quis cursus
+                    dui ultrices at. Nunc convallis arcu nec erat volutpat, non efficitur felis consequat. In hac
+                    habitasse platea dictumst. Aenean sagittis mollis elit vitae euismod. Nam id pretium magna. Integer
+                    pulvinar orci vitae tortor feugiat placerat. Vestibulum rhoncus tortor ac mauris mollis
+                    pellentesque.</p>
                 <div class="layout-base">
                     <div class="layout-node node-width-primary bgc-light-primary">
-                        <div class="text-copy">Some copy</div>
+                        <div class="text-subhead">Primary Column</div>
+                        <p class="text-copy">Maecenas laoreet risus vel felis pretium, eu luctus ipsum tristique. Donec
+                            sit amet sem ac ligula bibendum tempus. Proin non elit varius, aliquam lectus at, accumsan
+                            diam. Donec ipsum nulla, mattis sit amet nulla ut, laoreet faucibus orci. In bibendum
+                            sollicitudin felis, quis cursus dui ultrices at. Nunc convallis arcu nec erat volutpat, non
+                            efficitur felis consequat. In hac habitasse platea dictumst. Aenean sagittis mollis elit
+                            vitae euismod. Nam id pretium magna. Integer pulvinar orci vitae tortor feugiat placerat.
+                            Vestibulum rhoncus tortor ac mauris mollis pellentesque.</p>
                     </div>
-                    <div class="layout-node node-width-secondary bgc-accent">
-                        <div class="text-copy">Some other copy</div>
+                    <div class="layout-node node-width-secondary bgc-light-secondary">
+                        <div class="text-subhead">Secondary Column</div>
+                        <p class="text-copy">Mauris in sem posuere, ornare mauris id, auctor orci. Morbi ac nunc id ante
+                            vehicula mattis ac eu augue. Praesent in ante tempus, gravida nisi quis, ornare dolor. Fusce
+                            convallis mauris id eleifend vestibulum. Vivamus porttitor egestas dui ac sollicitudin.
+                            Nulla vulputate finibus diam eget volutpat. Donec mattis hendrerit tellus ac elementum.</p>
                     </div>
                 </div>
             </div>
             <div class="layout-base">
-                <div class="layout-node node-width-tertiery bgc-accent">
-                    <div class="text-subhead">Tertiery Column</div>
-                    <div class="text-copy">Some copy</div>
+                <div class="layout-node node-width-tertiery bgc-light-secondary">
+                    <div class="text-head">Tertiery Column</div>
+                    <div class="text-subhead">.node-width-tertiery</div>
+                    <p class="text-copy">Mauris in sem posuere, ornare mauris id, auctor orci. Morbi ac nunc id ante
+                        vehicula mattis ac eu augue. Praesent in ante tempus, gravida nisi quis, ornare dolor. Fusce
+                        convallis mauris id eleifend vestibulum. Vivamus porttitor egestas dui ac sollicitudin. Nulla
+                        vulputate finibus diam eget volutpat. Donec mattis hendrerit tellus ac elementum.</p>
                 </div>
-                <div class="layout-node bgc-light-primary">
-                    <div class="text-copy">Some copy</div>
+                <div class="layout-node node-width-auto bgc-dark-primary">
+                    <div class="text-head">Auto-sized Column</div>
+                    <div class="text-subhead">.node-width-auto</div>
+                    <p class="text-copy">Mauris in sem posuere, ornare mauris id, auctor orci. Morbi ac nunc id ante
+                        vehicula mattis ac eu augue. Praesent in ante tempus, gravida nisi quis, ornare dolor. Fusce
+                        convallis mauris id eleifend vestibulum. Vivamus porttitor egestas dui ac sollicitudin. Nulla
+                        vulputate finibus diam eget volutpat. Donec mattis hendrerit tellus ac elementum.</p>
+                    <p class="text-copy">Curabitur elementum rhoncus ante, vel tristique purus ultricies ullamcorper.
+                        Curabitur justo diam, mollis id neque vitae, vehicula tincidunt mauris. Phasellus blandit sapien
+                        sed nunc tristique, ac ultrices lectus semper. Vivamus vitae luctus augue. Etiam vitae magna non
+                        dolor tempor aliquet. Suspendisse et lacinia leo. Sed et lacus sed dui ultricies malesuada et
+                        sit amet sapien. In convallis sapien libero, nec porttitor purus rhoncus eu. Etiam in gravida
+                        enim. Cras a purus leo. Etiam egestas nisl ex, ut porta dui posuere a.</p>
                 </div>
+            </div>
+            <div class="layout-node node-width-auto bgc-dark-primary">
+                <div class="text-subhead">Dark Primary</div>
+            </div>
+            <div class="layout-node node-width-auto bgc-dark-secondary">
+                <div class="text-subhead">Dark Secondary</div>
+            </div>
+            <div class="layout-node node-width-auto bgc-light-primary">
+                <div class="text-subhead">Light Primary</div>
+            </div>
+            <div class="layout-node node-width-auto bgc-light-secondary">
+                <div class="text-subhead">Light Secondary</div>
+            </div>
+            <div class="layout-node node-width-auto bgc-accent">
+                <div class="text-subhead">Accent</div>
             </div>
         </div>
 
