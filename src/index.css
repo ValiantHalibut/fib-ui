@@ -1,2 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=B612:400,400i,700,700i');
-body{font-family:'B612', sans-serif;margin:0;}
+*{box-sizing:border-box;}
+body{font-family:'B612', sans-serif;font-size:16px;margin:0;}
+
+.fib-main{margin:0 auto;max-width:89em;}
+
+/* Background Colors */
+.bgc-black              {background-color:#111111;}
+.bgc-dark-primary       {background-color:#11234B;}
+.bgc-dark-secondary     {background-color:#345575;}
+.bgc-light-primary      {background-color:#E4E1C3;}
+.bgc-light-secondary    {background-color:#EB9E2B;}
+.bgc-accent             {background-color:#C94D2D;}
+
+/* Font Colors */
+.fcw{color:ghostwhite;}
+
+/* Basic text styles */
+[class^="text-"]{line-height:1.62;}
+.text-copy{font-size:1em;}
+.text-subhead{font-size:2em;}
+.text-head{font-size:3em;}
+
+/* Basic title styles */
+[class^="title-"]{line-height:2.12;}
+.title-section{font-size:5em;}
+.title-page{font-size:8em;}
+
+/* Structural Styles */
+.layout-base{display:flex;flex:0 0 100%;flex-wrap:wrap;}
+.layout-node{flex:auto;}
+.layout-node.node-width-full{flex:0 0 100%;}
+.layout-node.node-width-half{flex:0 0 50%;}
+.layout-node.node-width-primary{flex:0 0 61.8%;}
+.layout-node.node-width-secondary{flex:0 0 38.2%;}
+.layout-node.node-width-tertiery{flex:0 0 23.6%;}
+
+.layout-node.margin-small{background-clip:padding-box;border:0.5em solid transparent;}
+
+/* Button Styles */
+.button{border-radius:0.382em;color:ghostwhite;display:inline-block;font-weight:bold;letter-spacing:0.236em;margin:.5em .81em;padding:1em 1.62em;}
+.button-positive{background-color:#2F9252;}
+.button-negative{background-color:#BB3E37;}
+.button-neutral{background-color:#467073;}

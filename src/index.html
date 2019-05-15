@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <script src="index.js"></script>
-        <div class="main">
-            <div class="text-copy">Normal text, intended for readable body copy.</div>
-            <div class="text-head">Main Heading</div>
-            <div class="text-subhead">Sub Heading</div>
-            <div class="title-page">Page Title</div>
-            <div class="title-section">Section Title</div>
+
+<body class="bgc-black">
+    <script src="index.js"></script>
+    <div class="fib-main bgc-dark-primary">
+        <div class="title-page fcw">Copy Test</div>
+        <div class="title-section fcw">Copy Test</div>
+        <div class="text-head fcw">Copy Test</div>
+        <div class="text-subhead fcw">Copy Test</div>
+        <div class="text-copy fcw">Copy Test</div>
+        <div class="layout-base">
+            <div class="layout-node node-width-primary bgc-light-primary">
+                <div class="text-head">Button Styles</div>
+                <div class="button button-positive">Accept</div>
+                <div class="button button-negative">Cancel</div>
+                <div class="button button-neutral">Other</div>
+            </div>
+            <div class="layout-node node-width-secondary bgc-light-secondary">
+                <div class="text-head">Something Else</div>
+            </div>
         </div>
-    </body>
+        <div class="layout-base">
+            <div class="layout-node node-width-full bgc-light-secondary">
+                <div class="text-head">Some Header Text</div>
+            </div>
+            <div class="layout-node node-width-half bgc-light-primary">
+                <div class="text-subhead">Some Node SubHeader Text</div>
+                <div class="text-copy">Some node copy that's super interesting.</div>
+            </div>
+            <div class="layout-node node-width-half bgc-light-primary">
+                <div class="text-subhead">Some Other Node SubHeader</div>
+                <div class="text-copy">Some more node copy that's different but just as interesting.</div>
+            </div>
+            <div class="layout-node node-width-secondary bgc-dark-secondary fcw ">
+                <div class="text-subhead">Secondary Column</div>
+                <div class="text-copy">Secondary column node copy.</div>
+            </div>
+            <div class="layout-node node-width-primary bgc-light-secondary">
+                <div class="text-subhead">Primary Column</div>
+                <div class="text-copy">Primary column node copy for your enjoyment.</div>
+                <div class="layout-base">
+                    <div class="layout-node node-width-primary bgc-light-primary">
+                        <div class="text-copy">Some copy</div>
+                    </div>
+                    <div class="layout-node node-width-secondary bgc-accent">
+                        <div class="text-copy">Some other copy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-base">
+                <div class="layout-node node-width-tertiery bgc-accent">
+                    <div class="text-subhead">Tertiery Column</div>
+                    <div class="text-copy">Some copy</div>
+                </div>
+                <div class="layout-node bgc-light-primary">
+                    <div class="text-copy">Some copy</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
 </html>
