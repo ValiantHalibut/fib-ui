@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=B612:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Cambay:400,400i,700,700i|Cantarell:400,400i,700,700i');
 *{box-sizing:border-box;}
-body{font-family:'B612', sans-serif;font-size:16px;margin:0;}
+html{font-family:'Asap', sans-serif;font-size:16px;}
+body{margin:0;}
 
 .fib-main{margin:0 auto;max-width:89rem;}
 
@@ -63,7 +64,12 @@ body{font-family:'B612', sans-serif;font-size:16px;margin:0;}
 .button.txt-outline-black-soft:hover{text-shadow:0px 0px 0px black;}
 
 /* Form Styles */
-form{}
-label{}
-input{}
-textarea{}
+form.form{display:flex;flex-direction:column;}
+form .form-field{align-items:center;display:flex;margin:.62rem 0 2rem 0;flex-wrap:wrap;}
+.form-field-label{flex:0 0 23.6%; font-size:1.62rem;}
+.form-field-input{flex:1 1 0;min-width:0;}
+input.form-field-input{font-size:1.62rem;line-height:1rem;padding:.62rem 1rem .62rem 1rem;}
+input.form-field-checkbox{height:2.62rem;opacity:1;cursor:pointer;margin:0;width:2.62rem;}
+input.form-field-checkbox::after{background-color:ghostwhite;border:2px solid #C94D2D;border-radius:2px;content:"";display:block;height:inherit;width:inherit;}
+input.form-field-checkbox:checked::after{background-color:#C94D2D;color:ghostwhite;content:"×";font-size:2.62rem;font-weight:bold;line-height:2.62rem;text-align:center;}
+textarea.form-field-input{font-family:'B612', sans-serif;font-size:1rem;height:6rem;line-height:1rem;padding:.62rem 1rem .62rem 1rem;}

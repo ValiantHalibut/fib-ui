@@ -10,7 +10,7 @@
         <div class="text-subhead">Text Sub Header .text-subhead</div>
         <div class="text-copy">Body Copy Text .text-copy</div>
         <div class="layout-base">
-            <div class="layout-node node-width-primary bgc-light-primary padding-small">
+            <div class="layout-node node-width-primary bgc-light-primary padding-normal">
                 <div class="text-head">Button Styles</div>
                 <div class="button button-positive txt-outline-black">Accept</div>
                 <div class="button button-negative txt-outline-black">Cancel</div>
@@ -21,11 +21,19 @@
                 <div class="button button-neutral txt-outline-black-soft">Other</div>
                 <br>
                 <div class="text-head">Form Styles</div>
-                <form>
-                    <label for="textstring">Text Input</label>
-                    <input type="text" id="textstring" name="textstring" placeholder="Text String">
-                    <label for="textarea">Text Area</label>
-                    <textarea id="textarea" name="textarea" placeholder="Text Area..."></textarea>
+                <form class="form">
+                    <div class="form-field">
+                        <label class="form-field-label" for="textstring">Text Input</label>
+                        <input class="form-field-input" type="text" id="textstring" name="textstring" placeholder="Text String">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-field-label" for="textarea">Text Area</label>
+                        <textarea class="form-field-input" id="textarea" name="textarea" placeholder="Text Area..."></textarea>
+                    </div>
+                    <div class="form-field">
+                        <label class="form-field-label" for="checkbox">Checkbox</label>
+                        <input class="form-field-checkbox" type="checkbox" id="checkbox" name="checkbox"/>
+                    </div>
                 </form>
             </div>
             <div class="layout-node node-width-secondary bgc-light-secondary margin-xlarge padding-small">
