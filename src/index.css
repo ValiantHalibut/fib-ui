@@ -15,9 +15,6 @@ body{margin:0;}
 .bgc-light-secondary    {background-color:#EB9E2B;}
 .bgc-accent             {background-color:#C94D2D;}
 
-/* Font Colors */
-.fcw{color:ghostwhite;}
-
 /* Basic text styles */
 [class*="text-"]{line-height:1.62;}
 .text-copy{font-size:1rem;}
@@ -77,7 +74,7 @@ textarea.form-field-input{font-family:'Asap', sans-serif;font-size:1rem;height:6
 
 /* Checkbox */
 input.form-field-checkbox{height:2.62rem;opacity:1;cursor:pointer;margin:0;width:2.62rem;}
-input.form-field-checkbox::before{background-color:ghostwhite;border:2px solid #C94D2D;border-radius:2px;content:"";display:block;height:inherit;width:inherit;}
+input.form-field-checkbox::before{background-color:ghostwhite;border:2px solid #C94D2D;border-radius:2px;box-sizing:border-box;content:"";display:block;height:inherit;width:inherit;}
 input.form-field-checkbox:checked::before{background-color:#C94D2D;color:ghostwhite;content:"×";font-size:2.62rem;font-weight:bold;line-height:2.62rem;text-align:center;}
 
 /* Select */
@@ -86,7 +83,6 @@ select.form-field-input option{text-align:right;}
 
 /* Radio */
 .form-field-radio-container{font-size:1.62rem;display:flex;flex:1 1 0;justify-content:space-between;}
-input.form-field-radio{height:2.62rem;margin:0 0.62rem 0 0;vertical-align:middle;width:2.62rem;}
-input.form-field-radio::before{background-color:ghostwhite;border-radius:100%;content:"";height:inherit;display:block;width:inherit;}
-input.form-field-radio:checked::before{background-color:#C94D2D;}
-input.form-field-radio::after{background-color:ghostwhite;border-radius:100%;content:"";display:block;height:62%;width:62%;}
+input.form-field-radio{height:2.62rem;margin:0 0.62rem 0 0;position:relative;vertical-align:middle;width:2.62rem;}
+input.form-field-radio::before{background-color:ghostwhite;border:2px solid #C94D2D;border-radius:100%;box-sizing:border-box;content:"";display:block;height:inherit;position:absolute;width:inherit;}
+input.form-field-radio:checked::before{background-image:radial-gradient(#C94D2D 42%, ghostwhite 62%);}
