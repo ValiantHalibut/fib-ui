@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|Cambay:400,400i,700,700i|Cantarell:400,400i,700,700i');
+:root {
+    --base-text-size:16px;
+    --page-max-width:89rem;
+    --node-primary-width:61.8%;
+    --node-secondary-width:38.2%;
+    --node-tertiery-width:23.6%;
+    --color-black:#111111;
+    --color-white:ghostwhite;
+    --color-dark-primary:#11234B;
+    --color-dark-secondary:#345575;
+    --color-light-primary:#E4E1C3;
+    --color-light-secondary:#EB9E2B;
+    --color-accent:#C94D2D;
+    --color-accept:rgb(47, 146, 82);
+    --color-negative:rgb(187, 62, 55);
+    --color-neutral:rgb(70, 112, 115);
+}
+*{box-sizing:border-box;}
+html{font-family:'Asap', sans-serif;font-size:var(--base-text-size);}
+body{margin:0;}
+
+.fib-main{margin:0 auto;max-width:89rem;}
+
+/* Background Colors */
+[class*="bgc-dark-"]    {color:var(--color-white);}
+.bgc-black              {background-color:var(--color-black);}
+.bgc-dark-primary       {background-color:var(--color-dark-primary);}
+.bgc-dark-secondary     {background-color:var(--color-dark-secondary);}
+[class*="bgc-light-"]   {color:var(--color-black);}
+.bgc-light-primary      {background-color:var(--color-light-primary);}
+.bgc-light-secondary    {background-color:var(--color-light-secondary);}
+.bgc-accent             {background-color:var(--color-accent);}
+
+/* Basic text styles */
+[class*="text-"]{line-height:1.62;}
+.text-copy{font-size:1rem;}
+.text-subhead{font-size:2rem;}
+.text-head{font-size:3rem;}
+
+/* Basic title styles */
+[class*="title-"]{line-height:1.62;}
+.title-section{font-size:5rem;}
+.title-page{font-size:8rem;}
+
+/* Structural Styles */
+.ROOT{display:flex;flex:auto;flex-wrap:wrap;width:100%;}
+.ROOT._COLUMN{flex-direction:column;}
+
+.NODE{flex:auto;}
+.NODE._full{flex:0 0 100%;}
+.NODE._half{flex:0 0 50%;}
+.NODE._primary{flex:0 0 var(--node-primary-width);}
+.NODE._secondary{flex:0 0 var(--node-secondary-width);}
+.NODE._tertiery{flex:0 0 var(--node-tertiery-width);}
+.NODE._thirds{flex:0 0 calc(100%/3);}
+
+.ROOT._PAGE{margin:0 auto;max-width:var(--page-max-width);}
+
+/* NameSpaces */
+.StyleExamples{padding:0.5em;}
+
+/* Button Styles */
+.button{border-radius:0.382rem;color:var(--color-white);cursor:pointer;display:inline-block;font-weight:bold;letter-spacing:0.236rem;margin:.5rem .81rem;padding:1rem 1.62rem;}
+.button:hover{opacity:0.75;}
+.button-positive{background-color:var(--color-accept);}
+/* .button-positive:hover{opacity:0.75;} */
+.button-negative{background-color:var(--color-negative);}
+/* .button-negative:hover{opacity:0.75;} */
+.button-neutral{background-color:var(--color-neutral);}
+/* .button-neutral:hover{background-color:rgba(70, 112, 115, 0.5);} */
+
+/* Text Attributes */
+.txt-outline-black{text-shadow:-1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px -1px 0 var(--color-black);}
+.txt-outline-black-soft{text-shadow:1px 1px 2px var(--color-black);}
+/* .button.txt-outline-black-soft:hover{text-shadow:0px 0px 0px black;} */
+
+/* Form Styles */
+form.form{display:flex;flex-direction:column;}
+form .form-field{align-items:center;display:flex;margin:.62rem 0 2rem 0;flex-wrap:wrap;}
+.form-field-label{flex:0 0 23.6%; font-size:1.62rem;}
+.form-field-input{flex:1 1 0;line-height:1rem;min-width:0;padding:0.62rem 1rem;}
+
+/* Text input */
+input.form-field-input{font-size:1.62rem;}
+
+/* Textarea */
+textarea.form-field-input{font-family:'Asap', sans-serif;font-size:1rem;height:6rem;}
+
+/* Checkbox */
+input.form-field-checkbox{height:2.62rem;opacity:1;cursor:pointer;margin:0;width:2.62rem;}
+input.form-field-checkbox::before{background-color:var(--color-white);border:2px solid var(--color-accent);border-radius:2px;box-sizing:border-box;content:"";display:block;height:inherit;width:inherit;}
+input.form-field-checkbox:checked::before{background-color:var(--color-accent);color:var(--color-white);content:"×";font-size:2.62rem;font-weight:bold;line-height:2.62rem;text-align:center;}
+
+/* Select */
+select.form-field-input{font-family:'Asap', sans-serif;font-size:1.62rem;}
+select.form-field-input option{text-align:right;}
+
+/* Radio */
+.form-field-radio-container{font-size:1.62rem;display:flex;flex:1 1 0;justify-content:space-between;}
+input.form-field-radio{height:2.62rem;margin:0 0.62rem 0 0;position:relative;vertical-align:middle;width:2.62rem;}
+input.form-field-radio::before{background-color:var(--color-white);border:2px solid var(--color-accent);border-radius:100%;box-sizing:border-box;content:"";display:block;height:inherit;position:absolute;width:inherit;}
+input.form-field-radio:checked::before{background-image:radial-gradient(var(--color-accent) 42%, var(--color-white) 62%);}
